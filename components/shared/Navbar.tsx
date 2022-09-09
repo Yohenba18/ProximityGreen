@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <header className="mx-10 flex justify-between py-6 font-semibold items-center">
         <div className="font-bold text-2xl font-serif">PROXIMITY</div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 cursor-pointer">
           <div>Investment oppurtunity</div>
           <div>How it works</div>
           <div>About Us</div>

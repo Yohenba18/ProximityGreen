@@ -1,13 +1,15 @@
 import React from "react";
+import Card from "../Card/Card";
 
 const Funds = () => {
   return (
-    <div className="flex flex-col py-20 p-10 gap-10">
-      <div className="flex flex-col text-center">
+    <div className="flex flex-col py-16 p-10 gap-14">
+      <div className="flex flex-col gap-6 text-center">
         <h1 className="font-bold text-4xl">Green Funds</h1>
-        <p className="font-normal text-lg text-gray-400 w-1/2">
+        <p className="font-normal text-xl text-gray-400">
           Earn potential cash payments &amp; tax benifits through unique
-          revenue-share and debt financing investments.
+          revenue-shar
+          <br /> and debt financing investments.
         </p>
       </div>
       <div className="flex justify-evenly items-center">
@@ -21,7 +23,7 @@ const Funds = () => {
             opportunity for everyone.
           </p>
         </div>
-        <div>Cards</div>
+        <Card />
       </div>
     </div>
   );

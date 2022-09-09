@@ -12,10 +12,8 @@ const Home: NextPage = () => {
       <Layout>
         <div className="flex flex-col">
           <Intro />
-          <div className="p-5 py-20 bg-gradient-to-b from-white  to-blue-100">
-            <Funds />
-            <Graph />
-          </div>
+          <Funds />
+          <Graph />
           <Marketplace />
           <Raise />
         </div>

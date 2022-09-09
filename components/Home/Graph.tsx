@@ -55,12 +55,12 @@ export const data = {
 
 const Graph = () => {
   return (
-    <div className="flex justify-evenly items-center">
+    <div className="flex justify-evenly p-5 py-20 items-center  bg-gradient-to-b from-white to-blue-100">
       <div className="w-1/2">
         <Line options={options} data={data} />
       </div>
       <div className="w-1/3 flex flex-col gap-3">
-        <TiChartLine className="h-12 w-12 text-green-700"/>
+        <TiChartLine className="h-12 w-12 text-green-700" />
         <h3 className="font-bold text-4xl">$7M+ paid out to ESG Investors</h3>
         <p className="font-normal text-xl text-gray-400">
           There are many ESG rating, reporting agencies but the companies are
