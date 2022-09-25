@@ -11,7 +11,6 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-import { faker } from "@faker-js/faker";
 import { TiChartLine } from "react-icons/ti";
 
 ChartJS.register(
@@ -33,7 +32,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: "Chart.js Line Chart",
+      text: "Record",
     },
   },
 };
@@ -45,10 +44,10 @@ export const data = {
   datasets: [
     {
       fill: true,
-      label: "Dataset 2",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 7 })),
+      label: "Sales",
+      data: [33, 53, 85, 41, 44, 65],
       borderColor: "#128C76",
-      backgroundColor: "#75C696",
+      backgroundColor: "#b7e1c853",
     },
   ],
 };
