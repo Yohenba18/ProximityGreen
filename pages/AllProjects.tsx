@@ -1,4 +1,5 @@
 import React from "react";
+import List from "../components/AllProjects/List";
 import Searchbar from "../components/AllProjects/Searchbar";
 import Layout from "../components/shared/Layout";
 
@@ -7,6 +8,7 @@ const AllProject = () => {
     <div>
       <Layout>
         <Searchbar />
+        <List />
       </Layout>
     </div>
   );

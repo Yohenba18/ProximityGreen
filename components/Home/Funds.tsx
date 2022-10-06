@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
+import { data } from "../../data/Card";
 
 const Funds = () => {
   return (
@@ -23,7 +24,7 @@ const Funds = () => {
             opportunity for everyone.
           </p>
         </div>
-        <Card />
+        <Card data={data}/>
       </div>
     </div>
   );

@@ -1,15 +1,31 @@
+import { StaticImageData } from "next/image";
 import React from "react";
 import SingleCard from "./SingleCard";
-import { data } from "../../data/Card";
 
-const Card = () => {
+
+interface CardData {
+  id: number;
+  type: string;
+  title: string;
+  location: string;
+  description: string;
+  col_amount: string;
+  req_amount: string;
+  image: StaticImageData;
+}
+interface Props  {
+  data: CardData[];
+}
+
+
+const Card: React.FC<Props> = ({data}) => {
   return (
     <>
-      <div className="flex gap-10">
-        {data.map((dat, id) => {
+      <div className="grid grid-cols-3 gap-24">
+        {data.map((dat: CardData) => {
           return (
             <SingleCard
-              key={id}
+              key={dat.id}
               type={dat.type}
               image={dat.image}
               title={dat.title}
